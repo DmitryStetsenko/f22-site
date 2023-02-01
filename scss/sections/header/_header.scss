@@ -1,0 +1,95 @@
+.header {
+	background: #0d0d11;
+	position: sticky;
+	width: 100%;
+	top: -1px;
+	z-index: 10;
+	color: #fff;
+	font-size: 0.88rem; /* 16/18 */
+	line-height: 1.62; /* 26/16 */
+}
+.header-content {
+	@include flex(flex-end);
+	min-height: 115px;
+	column-gap: 35px;
+	&__button {
+	}
+}
+.logo {
+	@include flex;
+	width: 137px;
+	&__img {
+		width: 100px;
+		height: 100px;
+	}
+}
+.menu {
+	@include flex(flex-end);
+	flex: 1 1 auto;
+	&__list {
+		@include flex;
+		flex-wrap: wrap;
+		column-gap: 35px;
+		white-space: nowrap;
+	}
+	&__item {
+	}
+	&__link {
+		position: relative;
+		padding: 5px 0;
+		transition: 0.2s ease 0s;
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			width: 0;
+			height: 1px;
+			background-color: #fff;
+			transition: 0.2s ease 0s;
+		}
+	}
+}
+.cart {
+	@include flex;
+	column-gap: 5px;
+	&:hover {
+		& .cart__link::after {
+			width: 100%;
+		}
+	}
+	&__link {
+		position: relative;
+		padding: 5px 0;
+		transition: 0.2s ease 0s;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			width: 0;
+			height: 1px;
+			background-color: #fff;
+			transition: 0.2s ease 0s;
+		}
+	}
+	&__quantity {
+		@include flex;
+		width: 30px;
+		height: 30px;
+		background-color: #81818b4d;
+		border-radius: 50%;
+		line-height: 0;
+	}
+}
+
+.button-menu {
+	display: none;
+	&__item {
+	}
+}
