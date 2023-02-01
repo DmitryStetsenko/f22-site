@@ -4,22 +4,32 @@
 @import "./reset";
 @import "./common";
 
+img {
+    max-width: 100%;
+}
+
 
 .achivments {
-    display: flex;
-    
+    height: 100%;
+    padding-top: 100px;
     .achivments-cards {
         display: flex;
+        &__img {
+            width: 500px;
+            height: 600px;
+        }
         .achive-block {
-            max-width: 750px;
-            display: grid;
-            grid-template-columns: 360px 360px;
-            grid-template-rows: 280px 280px;
-            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 750px;
+            height: 600px;
+            margin-right: 20px;
             .achive {
-                @include flex();
+                display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-start;
+                max-width: 358px;
+                max-height: 278px;
                 background: #19191a;
                 border-radius: 30px;
                 padding: 30px 40px 70px 50px;
@@ -32,10 +42,84 @@
                 &__descr {
                     font-size: 18px;
                 }
+                &--mr {
+                    margin-right: 20px;
+                }
             }
         }
-        &__img {
-            margin-left: 30px;
+    }
+}
+@media (max-width: 1370px) {
+    .achivments-cards {
+        margin: 0 20px 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 850px) {
+    .achivments {
+        .achivments-cards {
+            .achive-block {
+                height: initial;
+                width: initial;
+                margin-right: 0;
+                display: flex;
+                justify-content: center;
+                    .achive {
+                        margin-bottom: 30px;
+                        &__number {
+                            font-size: 30px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+   @media (max-width: 805px) {
+        .achivments {
+            padding-top: 50px;
+            padding-bottom: 30px;
+            .achivments-cards {
+                margin: 0;
+                .achive-block {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    .achive {
+                        max-width: initial;
+                        &__number {
+                            font-size: 30px;
+                        }
+                        &--mr {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+   }
+   @media (max-width: 700px) {
+    .achivments {
+        padding-top: 50px;
+        .achivments-cards {
+           &__img {
+            width: 300px;
+            height: 400px;
+           }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .achivments {
+        padding-top: 50px;
+        .achivments-cards {
+           &__img {
+            width: 250px;
+            height: 300px;
+           }
         }
     }
 }
