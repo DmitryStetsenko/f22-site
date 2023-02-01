@@ -22,7 +22,17 @@ li {
 	list-style: none;
 }
 
+button,
+input,
+textarea {
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+	font-family: inherit;
+}
+
 button {
 	cursor: pointer;
 	background-color: inherit;
+	border: none;
 }
