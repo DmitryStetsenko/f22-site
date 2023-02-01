@@ -1,26 +1,140 @@
 .marketing {
     &-block {
-        
+        display: flex;
+        gap: 64px;
+        @media (max-width: 1280px) {
+            gap: calc(32px + (64 - 32) * ((100vw - 320px) / (1245 - 320)));
+        }
+        @media (max-width: 1060px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
 .marketing-img {
-    &__main {}
-    &__little {}
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    max-width: 608px;
+    height: 785.59px;
+    @media (max-width: 1280px) {
+        height: calc(400px + (785.59 - 400) * ((100vw - 320px) / (1245 - 320)));
+    }
+    &__main {
+        height: 100%;
+        & img {
+            object-fit: cover;
+            width: 423px;
+            height: 100%;
+            border-radius: 378px 0px 378px 378px;
+            @media (max-width: 1280px) {
+                width: calc(161px + (423 - 161) * ((100vw - 320px) / (1245 - 320)));
+            }
+        }
+    }
+    &__little {
+        height: 181.44px;
+        @media (max-width: 1280px) {
+            height: calc(109px + (181.44 - 109) * ((100vw - 320px) / (1245 - 320)));
+        }
+        & img {
+            height: 100%;
+            border-radius: 181.438px 181.438px 181.438px 0px;
+        }
+    }
+    &__points {
+        max-width: 122px;
+        max-height: 122px;
+        position: absolute;
+        left: -3%;
+        right: 74.18%;
+        top: 663.59px;
+        @media (max-width: 1280px) {
+            top: calc(325.59px + (663.59 - 325.59) * ((100vw - 320px) / (1245 - 320)));
+            max-width: calc(63px + (122 - 63) * ((100vw - 320px) / (1245 - 320)));
+            max-height: calc(76px + (122 - 76) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
 }
 
 .marketing-about {
-
-    &__title {}
-    &__descr {}
-
-}
-
-.marketing-preference {
+    padding-top: 90px;
+    font-style: normal;
+    @media (max-width: 1280px) {
+        padding-top: calc(0px + (90 - 0) * ((100vw - 320px) / (1245 - 320)));
+    }
+    &__button {
+        margin-bottom: 43px;
+        font-weight: 300;
+        font-size: 10.8px;
+        line-height: 17px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $ColorTextMarketing;
+        padding: 11px 19px;
+        border: 1px solid rgba(129, 129, 139, 0.2);
+        border-radius: 12px;
+        @media (max-width: 1280px) {
+            margin-bottom: calc(23px + (43 - 23) * ((100vw - 320px) / (1245 - 320)));
+            line-height: calc(10px + (17 - 10) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
+    &__title {
+        margin-bottom: 40px;
+        color: $ColorTextMarketing;
+        font-weight: 500;
+        font-size: 51.2px;
+        line-height: 61px;
+        @media (max-width: 1280px) {
+            margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1245 - 320)));
+            line-height: calc(20px + (61 - 20) * ((100vw - 320px) / (1245 - 320)));
+            font-size: calc(21px + (51.2 - 21) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
+    &__descr {
+        margin-bottom: 35px;
+        color: $ColorTextMarketing;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        @media (max-width: 1280px) {
+            margin-bottom: calc(20px + (35 - 20) * ((100vw - 320px) / (1245 - 320)));
+            line-height: calc(17px + (27 - 17) * ((100vw - 320px) / (1245 - 320)));
+            font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
 
 }
 
 .preference-item {
-    &__img {}
-    &__text {}
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &__text {
+        color: $ColorTextMarketing;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        @media (max-width: 1280px) {
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1245 - 320)));
+        }
+    }
+}
+
+.preference-circle {
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    background: rgba(129, 129, 139, 0.1);
+    @include flex;
+    margin-right: 10px;
+    @media (max-width: 1280px) {
+        height: calc(24px + (32 - 24) * ((100vw - 320px) / (1245 - 320)));
+        width: calc(24px + (32 - 24) * ((100vw - 320px) / (1245 - 320)));
+    }
 }
