@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <div class="marketing">
-        <div class="container">
-            <div class="marketing-block">
-                <div class="marketing-img">
-                    <img class="marketing-img__main" src="./img/MarketHead.jfif" alt="marketing-head">
-                    <img class="marketing-img__little" src="./img/Marketlitle.jfif" alt="marketing-little">
-                    <svg class="marketing-img__points">
-                        <use xlink:href="./img/svg-sprite/sprite.svg#"></use>
-                    </svg>
-                </div>
 
-                <div class="marketing-about">
-                    <button></button>
-                    <div class="marketing-about__title"></div>
-                    <div class="marketing-about__descr"></div>
-                    <ul class="marketing-preference">
-                       <li class="preference-item">
-                        <div class="preference-item__img"></div>
-                        <div class="preference-item__text"></div>
-                       </li>
-                       <li class="preference-item">
-                        <div class="preference-item__img"></div>
-                        <div class="preference-item__text"></div>
-                       </li>
-                       <li class="preference-item">
-                        <div class="preference-item__img"></div>
-                        <div class="preference-item__text"></div>
-                       </li>
-                       <li class="preference-item">
-                        <div class="preference-item__img"></div>
-                        <div class="preference-item__text"></div>
-                       </li>
-                    </ul>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header-content">
+					<a class="logo" href="#">
+						<img class="logo__img" src="./img/logo.svg" alt="logo">
+					</a>
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="#"></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"></a>
+							</li>
+						</ul>
+					</nav>
+					<div class="cart">
+						<div class="cart__link"></div>
+						<div class="cart__quantity"></div>
+					</div>
+					<button class="header-content__button button" type="button"></button>
+					<button class="button-menu" type="button">
+						<span class="button-menu__item"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="pages">
+			<div class="marketing">
+                <div class="container">
+                    <div class="marketing-block">
+                        <div class="marketing-img">
+                            <img class="marketing-img__main" src="./img/MarketHead.jfif" alt="marketing-head">
+                            <img class="marketing-img__little" src="./img/Marketlitle.jfif" alt="marketing-little">
+                            <svg class="marketing-img__points">
+                                <use xlink:href="./img/svg-sprite/sprite.svg#"></use>
+                            </svg>
+                        </div>
+        
+                        <div class="marketing-about">
+                            <button></button>
+                            <div class="marketing-about__title"></div>
+                            <div class="marketing-about__descr"></div>
+                            <ul class="marketing-preference">
+                               <li class="preference-item">
+                                <div class="preference-item__img"></div>
+                                <div class="preference-item__text"></div>
+                               </li>
+                               <li class="preference-item">
+                                <div class="preference-item__img"></div>
+                                <div class="preference-item__text"></div>
+                               </li>
+                               <li class="preference-item">
+                                <div class="preference-item__img"></div>
+                                <div class="preference-item__text"></div>
+                               </li>
+                               <li class="preference-item">
+                                <div class="preference-item__img"></div>
+                                <div class="preference-item__text"></div>
+                               </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+		</main>
+	</div>
 </body>
+
 </html>
