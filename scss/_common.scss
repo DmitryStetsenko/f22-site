@@ -9,10 +9,21 @@ body {
 	background-color: #0d0d11;
 }
 
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+}
+
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+.pages {
+	flex: 1 1 auto;
 }
 
 .button {
