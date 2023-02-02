@@ -1,45 +1,45 @@
 :root {
-	font-family: "Poppins", sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	color: #9c9c9c;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #9c9c9c;
 }
 
 body {
-	background-color: #0d0d11;
+    background-color: #0d0d11;
 }
 
 .wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
 }
 
 .container {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 0 15px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .pages {
-	flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .button {
-	display: inline-block;
-	text-align: center;
-	line-height: 1;
-	font-weight: 500;
-	color: #fff;
-	padding: 19px 30px;
-	white-space: nowrap;
-	font-size: 0.77rem; /* 14/18 */
-	letter-spacing: 2px;
-	border-radius: 50px;
-	transition: background-color 0.2s ease 0s;
-	background-color: #3d96f4;
-	&:hover {
-		background-color: #65afff;
-	}
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+    padding: 19px 30px;
+    white-space: nowrap;
+    font-size: 0.77rem; /* 14/18 */
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: background-color 0.2s ease 0s;
+    background-color: #3d96f4;
+    &:hover {
+        background-color: #65afff;
+    }
 }

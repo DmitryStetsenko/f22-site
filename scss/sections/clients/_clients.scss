@@ -2,65 +2,65 @@ $bp1: 1100px;
 $bp2: 900px;
 
 .clients {
-	padding-top: 100px;
-	padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 .clients-content {
-	@include flex(center, center, column);
-	row-gap: 45px;
-	@media (max-width: $bp1) {
-		row-gap: 25px;
-	}
-	&__title {
-		color: $colorTitle;
-		letter-spacing: 1px;
-		font-weight: 300;
-		font-size: 0.77rem; /* 14/18 */
-		line-height: 1.57; /* 22/14 */
-		text-align: center;
-		@media (max-width: $bp2) {
-			font-size: 0.72rem; /* 13/18 */
-		}
-	}
-	&__items {
-		@include flex(space-between);
-		column-gap: 30px;
-		position: relative;
-		z-index: 2;
-		width: 100%;
-		@media (min-width: $bp2) {
-			&::before,
-			&::after {
-				content: "";
-				position: absolute;
-				top: -12px;
-				z-index: 1;
-				height: 65px;
-				width: 115px;
-			}
-			&::before {
-				left: -20px;
-				background: linear-gradient(90deg, #0d0d11 8%, rgba(0, 0, 0, 0) 100%);
-			}
-			&::after {
-				right: -20px;
-				background: linear-gradient(270deg, #0d0d11 8%, rgba(0, 0, 0, 0) 100%);
-			}
-		}
-		@media (max-width: $bp2) {
-			justify-content: center;
-			flex-wrap: wrap;
-			row-gap: 15px;
-		}
-	}
-	&__item {
-		flex: 0 1 165px;
-		&-img {
-			width: 100%;
-			height: 100%;
-		}
-		@media (max-width: $bp2) {
-			flex: 0 1 150px;
-		}
-	}
+    @include flex(center, center, column);
+    row-gap: 45px;
+    @media (max-width: $bp1) {
+        row-gap: 25px;
+    }
+    &__title {
+        color: $colorTitle;
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-size: 0.77rem; /* 14/18 */
+        line-height: 1.57; /* 22/14 */
+        text-align: center;
+        @media (max-width: $bp2) {
+            font-size: 0.72rem; /* 13/18 */
+        }
+    }
+    &__items {
+        @include flex(space-between);
+        column-gap: 30px;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        @media (min-width: $bp2) {
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: -12px;
+                z-index: 1;
+                height: 65px;
+                width: 115px;
+            }
+            &::before {
+                left: -20px;
+                background: linear-gradient(90deg, #0d0d11 8%, rgba(0, 0, 0, 0) 100%);
+            }
+            &::after {
+                right: -20px;
+                background: linear-gradient(270deg, #0d0d11 8%, rgba(0, 0, 0, 0) 100%);
+            }
+        }
+        @media (max-width: $bp2) {
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 15px;
+        }
+    }
+    &__item {
+        flex: 0 1 165px;
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width: $bp2) {
+            flex: 0 1 150px;
+        }
+    }
 }
