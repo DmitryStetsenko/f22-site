@@ -22,6 +22,8 @@
         height: calc(400px + (785.59 - 400) * ((100vw - 320px) / (1245 - 320)));
     }
     &__main {
+        position: relative;
+        z-index: 1;
         height: 100%;
         & img {
             object-fit: cover;
@@ -71,7 +73,6 @@
         line-height: 17px;
         letter-spacing: 2px;
         text-transform: uppercase;
-        color: $ColorTextMarketing;
         padding: 11px 19px;
         border: 1px solid rgba(129, 129, 139, 0.2);
         border-radius: 12px;
@@ -82,7 +83,7 @@
     }
     &__title {
         margin-bottom: 40px;
-        color: $ColorTextMarketing;
+        color: $colorTitle;
         font-weight: 500;
         font-size: 51.2px;
         line-height: 61px;
@@ -94,7 +95,6 @@
     }
     &__descr {
         margin-bottom: 35px;
-        color: $ColorTextMarketing;
         font-weight: 300;
         font-size: 18px;
         line-height: 27px;
@@ -115,7 +115,6 @@
         margin-bottom: 0;
     }
     &__text {
-        color: $ColorTextMarketing;
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
