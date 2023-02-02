@@ -1,38 +1,38 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
-	height: 100%;
-	line-height: 1;
+    height: 100%;
+    line-height: 1;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
-	display: block;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 ul,
 ol,
 li {
-	list-style: none;
+    list-style: none;
 }
 
 button,
 input,
 textarea {
-	font-size: inherit;
-	font-weight: inherit;
-	color: inherit;
-	font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    font-family: inherit;
 }
 
 button {
-	cursor: pointer;
-	background-color: inherit;
-	border: none;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
 }
