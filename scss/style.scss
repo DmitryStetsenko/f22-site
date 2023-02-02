@@ -4,8 +4,11 @@
 @import "./reset";
 @import "./common";
 
-// section
+// header
 @import "./sections//header/header";
+
+//clients
+@import "./sections/clients/clients";
 
 //marketing
 @import "./sections/marketing/marketing";
