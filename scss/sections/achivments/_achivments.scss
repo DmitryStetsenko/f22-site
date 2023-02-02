@@ -1,14 +1,11 @@
-img {
-    max-width: 100%;
-}
-
 
 .achivments {
     height: 100%;
     padding-top: 100px;
     .achivments-cards {
         display: flex;
-        &__img {
+        &__card-img {
+            max-width: 100%;
             width: 500px;
             height: 600px;
         }
@@ -99,7 +96,7 @@ img {
     .achivments {
         padding-top: 50px;
         .achivments-cards {
-           &__img {
+           &__card-img {
             width: 300px;
             height: 400px;
            }
@@ -110,7 +107,7 @@ img {
     .achivments {
         padding-top: 50px;
         .achivments-cards {
-           &__img {
+           &__card-img {
             width: 250px;
             height: 300px;
            }
