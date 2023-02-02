@@ -17,7 +17,7 @@ $bp3: 424.98px;
     }
 }
 
-.header-content {
+.header-block {
     @include flex(flex-end);
     min-height: 115px;
     column-gap: 35px;
