@@ -2,7 +2,7 @@
     padding: 100px 0;
     &-block {
         display: flex;
-        gap: 64px;
+        column-gap: 64px;
         @media (max-width: 1280px) {
             gap: calc(32px + (64 - 32) * ((100vw - 320px) / (1245 - 320)));
         }
@@ -85,8 +85,6 @@
     }
     &__descr {
         margin-bottom: 35px;
-        font-weight: 300;
-        font-size: 18px;
         line-height: 27px;
         @media (max-width: 1280px) {
             margin-bottom: calc(20px + (35 - 20) * ((100vw - 320px) / (1245 - 320)));
@@ -105,8 +103,6 @@
         margin-bottom: 0;
     }
     &__text {
-        font-style: normal;
-        font-weight: 300;
         font-size: 16px;
         line-height: 24px;
         @media (max-width: 1280px) {
