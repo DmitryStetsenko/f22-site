@@ -14,7 +14,6 @@
 }
 
 .marketing-img {
-    order: 2;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -22,6 +21,9 @@
     height: 785.59px;
     @media (max-width: 1280px) {
         height: calc(400px + (785.59 - 400) * ((100vw - 320px) / (1245 - 320)));
+    }
+    @media (max-width: 1060px) {
+        order: 2;
     }
     &__main {
         position: relative;
