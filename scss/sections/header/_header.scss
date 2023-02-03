@@ -21,7 +21,7 @@ $bp3: 424.98px;
     @include flex(flex-end);
     min-height: 115px;
     column-gap: 35px;
-    &__button-started {
+    &__button {
         position: relative;
         z-index: 15;
         @media (max-width: $bp1) {
@@ -130,9 +130,7 @@ $bp3: 424.98px;
     }
     &__button {
         display: none;
-        &-started {
-            font-size: 1.3rem;
-        }
+		font-size: 1.3rem;
         @media (max-width: $bp3) {
             display: block;
         }
