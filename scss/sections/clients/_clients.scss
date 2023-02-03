@@ -5,7 +5,7 @@ $bp2: 900px;
     padding-top: 100px;
     padding-bottom: 70px;
 }
-.clients-content {
+.clients-block {
     @include flex(center, center, column);
     row-gap: 45px;
     @media (max-width: $bp1) {

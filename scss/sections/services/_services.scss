@@ -1,0 +1,59 @@
+.services {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.services-block {
+    @include flex;
+	column-gap: 30px;
+    &__main {
+        @include flex(center, flex-start, column);
+        row-gap: 30px;
+		flex: 0 0 auto;
+    }
+    &__content {
+		
+    }
+    &__title {
+        color: $colorTitle;
+        font-weight: 500;
+        font-size: 2.83rem; /* 51/18 */
+        line-height: 1.19; /* 61/51 */
+        margin-bottom: 20px;
+    }
+    &__descr {
+        line-height: 1.5; /* 27/18 */
+        max-width: 490px;
+    }
+    &__button-services {
+    }
+}
+.services-items {
+	@include flex(flex-end);
+	flex-wrap: wrap;
+    gap: 30px;
+}
+.services-item {
+	@include flex(center, flex-start, column);
+	flex: 0 1 315px;
+    row-gap: 15px;
+    background: #81818b1a;
+    border-radius: 30px;
+    padding: 55px 55px 55px 25px;
+    &__icon {
+        width: 100%;
+        height: 100%;
+        &-wrap {
+            height: 76px;
+        }
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 1.05rem; /* 19/18 */
+        line-height: 1.42; /* 27/19 */
+        color: $colorTitle;
+    }
+    &__descr {
+        font-size: 0.88rem; /* 16/18 */
+        line-height: 1.33; /* 24/18 */
+    }
+}
