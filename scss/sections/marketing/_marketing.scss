@@ -46,16 +46,20 @@
         }
     }
     &__points {
-        max-width: 122px;
-        max-height: 122px;
+        width: 122px;
+        height: 122px;
         position: absolute;
         left: -3%;
         right: 74.18%;
         top: 663.59px;
         @media (max-width: 1280px) {
             top: calc(325.59px + (663.59 - 325.59) * ((100vw - 320px) / (1245 - 320)));
-            max-width: calc(63px + (122 - 63) * ((100vw - 320px) / (1245 - 320)));
+            max-width: calc(76px + (122 - 76) * ((100vw - 320px) / (1245 - 320)));
             max-height: calc(76px + (122 - 76) * ((100vw - 320px) / (1245 - 320)));
+        }
+        & img {
+            height: 100%;
+            width: 100%;
         }
     }
 }
