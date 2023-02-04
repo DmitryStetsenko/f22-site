@@ -7,11 +7,12 @@
 // header
 @import "./sections//header/header";
 
+// hero
+@import "./sections/hero/hero";
+@import "./sections/hero/hero-media";
+
 //services
 @import "./sections/services/services";
-@import "./sections/marketing/container/container";
-@import "./sections/marketing/marketing";
-@import "./sections/marketing/marketing-media";
 
 //clients
 @import "./sections/clients/clients";
