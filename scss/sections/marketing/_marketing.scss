@@ -1,14 +1,11 @@
 .marketing {
-    padding: 100px 0;
+    @include adaptiv-value("padding-top", 100, 50, 1);
+    @include adaptiv-value("padding-bottom", 100, 50, 1);
     &-block {
         display: flex;
-        column-gap: 64px;
-        @media (max-width: 1280px) {
-            gap: calc(32px + (64 - 32) * ((100vw - 320px) / (1245 - 320)));
-        }
+        @include adaptiv-value("column-gap", 64, 32, 1);
         @media (max-width: 1060px) {
-            flex-direction: column;
-            align-items: center;
+            @include flex($fd: column, $ai: center);
         }
     }
 }
@@ -18,12 +15,10 @@
     display: flex;
     align-items: flex-end;
     max-width: 608px;
-    height: 785.59px;
-    @media (max-width: 1280px) {
-        height: calc(400px + (785.59 - 400) * ((100vw - 320px) / (1245 - 320)));
-    }
+    @include adaptiv-value("height", 785.59, 400, 1);
     @media (max-width: 1060px) {
         order: 2;
+        margin-top: 20px;
     }
     &__main {
         position: relative;
@@ -31,36 +26,25 @@
         height: 100%;
         & img {
             object-fit: cover;
-            width: 423px;
+            @include adaptiv-value("width", 423, 161, 1);
             height: 100%;
             border-radius: 378px 0px 378px 378px;
-            @media (max-width: 1280px) {
-                width: calc(161px + (423 - 161) * ((100vw - 320px) / (1245 - 320)));
-            }
         }
     }
     &__little {
-        height: 181.44px;
-        @media (max-width: 1280px) {
-            height: calc(109px + (181.44 - 109) * ((100vw - 320px) / (1245 - 320)));
-        }
+        @include adaptiv-value("height", 181.44, 109, 1);
         & img {
             height: 100%;
             border-radius: 181.438px 181.438px 181.438px 0px;
         }
     }
     &__points {
-        width: 122px;
-        height: 122px;
         position: absolute;
         left: -3%;
         right: 74.18%;
-        top: 663.59px;
-        @media (max-width: 1280px) {
-            top: calc(325.59px + (663.59 - 325.59) * ((100vw - 320px) / (1245 - 320)));
-            max-width: calc(76px + (122 - 76) * ((100vw - 320px) / (1245 - 320)));
-            max-height: calc(76px + (122 - 76) * ((100vw - 320px) / (1245 - 320)));
-        }
+        @include adaptiv-value("top", 663.59, 325.59, 1);
+        @include adaptiv-value("max-width", 122, 76, 1);
+        @include adaptiv-value("max-height", 122, 76, 1);
         & img {
             height: 100%;
             width: 100%;
@@ -71,29 +55,20 @@
 .marketing-about {
     padding-top: 90px;
     font-style: normal;
-    @media (max-width: 1280px) {
-        padding-top: calc(0px + (90 - 0) * ((100vw - 320px) / (1245 - 320)));
+    @media (max-width: 1060px) {
+        padding-top: 0;
     }
     &__title {
-        margin-bottom: 40px;
         color: $colorTitle;
         font-weight: 500;
-        font-size: 51.2px;
-        line-height: 61px;
-        @media (max-width: 1280px) {
-            margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1245 - 320)));
-            line-height: calc(20px + (61 - 20) * ((100vw - 320px) / (1245 - 320)));
-            font-size: calc(21px + (51.2 - 21) * ((100vw - 320px) / (1245 - 320)));
-        }
+        @include adaptiv-value("margin-bottom", 40, 20, 1);
+        @include adaptiv-value("line-height", 61, 20, 1);
+        @include adaptiv-value("font-size", 51.2, 21, 1);
     }
     &__descr {
-        margin-bottom: 35px;
-        line-height: 27px;
-        @media (max-width: 1280px) {
-            margin-bottom: calc(20px + (35 - 20) * ((100vw - 320px) / (1245 - 320)));
-            line-height: calc(17px + (27 - 17) * ((100vw - 320px) / (1245 - 320)));
-            font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1245 - 320)));
-        }
+        @include adaptiv-value("margin-bottom", 35, 20, 1);
+        @include adaptiv-value("line-height", 27, 17, 1);
+        @include adaptiv-value("font-size", 18, 14, 1);
     }
 
 }
@@ -106,23 +81,16 @@
         margin-bottom: 0;
     }
     &__text {
-        font-size: 16px;
         line-height: 24px;
-        @media (max-width: 1280px) {
-            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1245 - 320)));
-        }
+        @include adaptiv-value("font-size", 16, 14, 1);
     }
 }
 
 .preference-circle {
-    height: 32px;
-    width: 32px;
     border-radius: 32px;
     background: rgba(129, 129, 139, 0.1);
     @include flex;
     margin-right: 10px;
-    @media (max-width: 1280px) {
-        height: calc(24px + (32 - 24) * ((100vw - 320px) / (1245 - 320)));
-        width: calc(24px + (32 - 24) * ((100vw - 320px) / (1245 - 320)));
-    }
+    @include adaptiv-value("height", 32, 24, 1);
+    @include adaptiv-value("width", 32, 24, 1);
 }
