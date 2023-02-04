@@ -29,11 +29,13 @@
     }
     .blog-posts {
         margin-top: 64px;
+        display: flex;
         .blog-post {
             height: 534px;
             width: 394px;
             border-radius: 24px;
             background: rgba(129, 129, 139, 0.1);
+            margin-right: 48px;
             img {
                 height: 194px;
                 border-radius: 24px 24px 0px 0px;
@@ -44,11 +46,14 @@
                 line-height: 22px;
                 color: white;
                 position: relative;
-                top:-40px;
+                top:-42px;
                 width: 107px;
                 background: rgba(129, 129, 139, 0.5);
                 border-radius: 0px 10px 0px 0px;
                 padding: 9px;
+            }
+            .post-topic-num-two {
+                width: 46px;
             }
             .post-date {
                 font-weight: 300;
@@ -66,6 +71,9 @@
                 position: relative;
                 left: 26px;
                 margin-top: 20px;
+            }
+            .post-header-num-two {
+                width: 323px;
             }
             .post-descr {
                 width: 340px;
