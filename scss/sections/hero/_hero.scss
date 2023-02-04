@@ -1,0 +1,91 @@
+.pages {
+    .hero {
+        .container {
+            .business {
+                max-width: 1280px;
+                @include flex($jc: center, $ai: center, $fd: row);
+                &__solutions {
+                    padding: 100px 25px 100px 50px;
+                    position: relative;        
+                    .circles {
+                        position: absolute;
+                        top: 50px;
+                        left: 20px;
+                        z-index: 2;
+                        display: grid;
+                        grid-gap: 10px;
+                        grid-template: auto / repeat(8, 10px);
+                        &__circle {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: #3a3a3a;
+                        }
+                    }
+                    .heading {
+                        h1 {
+                            color: white;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 51.2px;
+                            line-height: 61px;
+                            letter-spacing: 3px;
+                            position: relative;
+                            z-index: 3;
+                        }
+                        p { 
+                            margin-top: 30px;
+                            color: #9C9C9C;
+                            font-weight: 300;
+                            line-height: 30px;
+                            position: relative;
+                            z-index: 3;
+                        }
+                    }
+                    .buttons {
+                        margin-top: 50px;
+                        @include flex($jc: flex-start, $ai: center, $fd: row);
+                        .our-services {           
+                            margin-right: 50px;     
+                            text-align: center;
+                            width: 160px;
+                            height: 52px;
+                            border-radius: 26px;
+                            background-color: #3d96f4;
+                            color: white;
+                        }
+                        .contact-us {
+                            text-align: center;
+                            width: 160px;
+                            height: 52px;
+                            border-radius: 26px;
+                            background-color: #81818b;
+                            color: white;
+                        }
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .photos {
+                    padding: 100px 50px 100px 25px;
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    .first-two {
+                        margin-right: 50px;
+                        @include flex($jc: center, $ai: center, $fd: column);
+                        img {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .second-two {
+                        @include flex($jc: center, $ai: center, $fd: column);
+                        img {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
